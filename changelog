@@ -1,0 +1,149 @@
+turnkey-lamp-12.0 (1) turnkey; urgency=low
+
+  * Major component versions
+
+    apache2                 2.2.16-6+squeeze7
+    mysql-server            5.1.63-0+squeeze1
+    phpmyadmin              4:3.3.7-7
+
+    libapache2-mod-php5     5.3.3-7+squeeze13
+    php5-mysql              5.3.3-7+squeeze13
+
+    libapache2-mod-python   3.3.1-9
+    python-mysqldb          1.2.2-10+b1
+
+    libapache2-mod-perl2    2.0.4-7
+    libdbd-mysql-perl       4.016-1
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Wed, 01 Aug 2012 08:00:00 +0200
+
+turnkey-lamp-11.3 (1) turnkey; urgency=low
+
+  * Installed security updates.
+  * Enabled etckeeper garbage collection by default.
+  * Upgraded to latest inithooks version (adhoc re-initialization via turnkey-init)
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Mon, 05 Dec 2011 10:48:44 +0000
+
+turnkey-lamp-11.2 (1) turnkey; urgency=low
+
+  * Installed security updates.
+  * Added HubDNS package and firstboot configuration.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Fri, 15 Jul 2011 07:47:08 +0000
+
+turnkey-lamp-11.1 (1) turnkey; urgency=low
+
+  * Set MySQL root password on firstboot (convenience, security).
+
+  * Force MySQL to use Unicode/UTF8.
+
+  * Support CGI out of the box.
+
+  * Added php-xcache PHP opcode cacher / optimizer (performance).
+
+  * Set postfix MTA myhostname to localhost (bugfix).
+
+  * Enabled tracking in PHPMyAdmin.
+
+  * Minor tweaks to TKL web control panel.
+
+  * Major component versions:
+
+    phpmyadmin      4:3.3.2-1
+    mysql-server    5.1.41-3ubuntu12.8
+    apache2         2.2.14-5ubuntu8.4
+    php5            5.3.2-1ubuntu4.5
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Sun, 19 Dec 2010 15:01:05 +0200
+
+turnkey-lamp-2009.10 (2) hardy; urgency=low
+
+  * Installed all security updates (see manifest for package versions).
+
+  * Install security updates on firstboot (except when running live).
+
+  * Bugfix: Updated apt preferences for auto-security updates (LP#550307).
+
+  * Trick webmin into not checking for upgrades (managed by apt).
+
+  * Updated di-live mysql mechanism and secret regeneration.
+
+  * Included latest version of inithooks and updated scripts.
+
+  * Included wget as per common request.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Mon, 29 Mar 2010 09:02:11 +0200
+
+turnkey-lamp-2009.10 (1) hardy; urgency=low
+
+  * Added Turnkey web control panel (replaces welcome page). Also fixes
+    displaying correct host when behind proxy (SERVER_ADDR -> HTTP_HOST).
+
+  * Added postfix MTA (bound to localhost) to allow sending of email from
+    web applications (e.g., password recovery). Also added webmin-postfix
+    module for convenience.
+
+  * PHPMyAdmin improvements:
+
+    - Added pmadb (linked tables) advanced features to PHPMyAdmin (LP#426303)
+    - Added mcrypt extension to Apache2 required by PHPMyAdmin (LP#345275)
+    - Pinned PHPMyAdmin to update directly from Debian (security).
+
+  * di-live (installer) MySQL component:
+
+    - Added support for complex passwords (LP#416515).
+    - Added CLI options (user/pass/query/chroot).
+  
+  * Added curl (generically useful in LAMP type appliances).
+  * Removed "AllowOverride None" directive from default site configuration.
+  * Bugfix: Removed build systems hostname from MySQL user table.
+
+  * Regenerates all secrets during installation / firstboot (security).
+
+  * Major component versions:
+
+    phpmyadmin      2.11.8.1-5+lenny1
+    mysql-server    5.0.51a-3ubuntu5.4
+    apache2         2.2.8-1ubuntu0.11
+    php5            5.2.4-2ubuntu5.7
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Tue, 29 Sep 2009 15:39:41 +0200
+
+turnkey-lamp-2009.02 (1) hardy; urgency=low
+
+  * added SSL support
+
+  * added Python and Perl support for apache2 and mysql, so the P in our LAMP
+    stack appliance now stands for Perl and Python in addition to PHP.
+
+  * mysql-related improvements
+
+    - include PhpMyAdmin (listening on port 12322 - uses SSL)
+    - set empty mysql root password in live/demo mode (for convenience)
+    - support configuring mysql root password during installation
+
+  * updated apache2 "it works" page to provide more useful info/links
+  * added webmin PHP configuration module and increased default PHP limits
+    (convenience)
+
+  * major component versions
+
+    phpmyadmin      2.11.8.1-5
+    mysql-server    5.0.51a-3ubuntu5.4
+    apache2         2.2.8-1ubuntu0.3
+    php5            5.2.4-2ubuntu5.4
+
+  * note: please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Thu, 29 Jan 2009 14:31:45 +0200

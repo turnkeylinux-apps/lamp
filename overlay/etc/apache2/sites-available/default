@@ -1,0 +1,23 @@
+NameVirtualHost *:80
+NameVirtualHost *:443
+
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/
+</VirtualHost>
+
+<VirtualHost *:443>
+        SSLEngine on
+        SSLCertificateFile /etc/ssl/certs/cert.pem
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/
+</VirtualHost>
+
+ScriptAlias /cgi-bin/ /var/www/cgi-bin/
+
+<Directory /var/www/>
+        Options Indexes FollowSymLinks MultiViews
+        Order allow,deny
+        allow from all
+</Directory>
+
