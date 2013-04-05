@@ -1,3 +1,12 @@
+turnkey-lamp-12.1 (1) turnkey; urgency=low
+
+  * Added phpsh (interative shell for PHP) and php5-cli (generically useful).
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Alon Swartz <alon@turnkeylinux.org>  Fri, 05 Apr 2013 08:00:00 +0200
+
 turnkey-lamp-12.0 (1) turnkey; urgency=low
 
   * Major component versions
