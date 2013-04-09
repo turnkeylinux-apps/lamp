@@ -1,0 +1,1 @@
+export XDEBUG_CONFIG="idekey=xdebug"
