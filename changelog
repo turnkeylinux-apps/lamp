@@ -1,6 +1,11 @@
 turnkey-lamp-12.1 (1) turnkey; urgency=low
 
-  * Added phpsh (interative shell for PHP) and php5-cli (generically useful).
+  * Added useful PHP5 development aids:
+
+    - phpsh: interactive shell
+    - php5-cli: command-line interpreter
+    - php5-xdebug: debugging on profiling
+    - php-pear: php extension and application repository
 
   * Note: Please refer to turnkey-core's changelog for changes common to all
     appliances. Here we only describe changes specific to this appliance.
