@@ -8,4 +8,4 @@ libapache2-mod-perl2     # Integration of perl with the Apache2 web server
 libdbd-mysql-perl        # A Perl5 database interface to the MySQL database
 
 php5-xdebug
-php5-pear
+php-pear
