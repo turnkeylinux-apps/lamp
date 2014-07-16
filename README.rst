@@ -12,6 +12,13 @@ top of that:
 
 - SSL support out of the box.
 - PHP, Python and Perl support for Apache2 and MySQL.
+- PHP development helpers
+
+    - phpsh: interactive shell
+    - php5-cli: command-line interpreter
+    - php5-xdebug: debugging and profiling
+    - php-pear: php extension and application repository
+
 - XCache - PHP opcode caching acceleration.
 - `PHPMyAdmin`_ administration frontend for MySQL (listening on port
   12322 - uses SSL).
