@@ -14,15 +14,15 @@ top of that:
 - PHP, Python and Perl support for Apache2 and MySQL.
 - PHP development helpers
 
-    - phpsh: interactive shell
+    - `phpsh`_: interactive shell
+    - `php5-xdebug`_: debugging and profiling
+    - `php-pear`_: php extension and application repository
     - php5-cli: command-line interpreter
-    - php5-xdebug: debugging and profiling
-    - php-pear: php extension and application repository
 
-- XCache - PHP opcode caching acceleration.
+- `XCache`_ - PHP opcode caching acceleration.
 - `PHPMyAdmin`_ administration frontend for MySQL (listening on port
   12322 - uses SSL).
-- Postfix MTA (bound to localhost) to allow sending of email from web
+- `Postfix`_ MTA (bound to localhost) to allow sending of email from web
   applications (e.g., password recovery).
 - Webmin modules for configuring Apache2, PHP, MySQL and Postfix.
 
@@ -33,7 +33,11 @@ Credentials *(passwords set at first boot)*
 
 -  Webmin, SSH, MySQL, phpMyAdmin: username **root**
 
-
 .. _TurnKey Core: http://www.turnkeylinux.org/core
+.. _phpsh: http://www.phpsh.org/
+.. _php5-xdebug: http://xdebug.org/
+.. _php-pear: http://pear.php.net/
+.. _XCache: http://xcache.lighttpd.net/
 .. _PHPMyAdmin: http://www.phpmyadmin.net/
+.. _Postfix: http://www.postfix.org/
 .. _LAPP stack: http://www.turnkeylinux.org/lapp
