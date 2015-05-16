@@ -1,0 +1,11 @@
++ rm -rf /usr/local/src/phpsh
+fab-chroot build/root.patched --script /turnkey/fab/common/conf/apache-vhost
+fab-chroot build/root.patched --script /turnkey/fab/common/conf/postfix-local
+[ ok ] Starting Postfix Mail Transport Agent: postfix.
+[ ok ] Stopping Postfix Mail Transport Agent: postfix.
+fab-chroot build/root.patched --script /turnkey/fab/common/conf/phpmyadmin
+df: Warning: cannot read table of mounted file systems: No such file or directory
+[FAIL] Starting MySQL database server: mysqld . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . failed!
+/usr/share/fab/product.mk:476: recipe for target 'build/stamps/root.patched' failed
+make: *** [build/stamps/root.patched] Error 1
+
