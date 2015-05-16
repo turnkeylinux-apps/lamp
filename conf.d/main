@@ -1,8 +1,5 @@
 #!/bin/sh -ex
 
-a2dissite 000-default
-a2ensite default
-
 #ensure datafiles (eg. innodb) are created
 /etc/init.d/mysql start
 /etc/init.d/mysql stop
