@@ -20,7 +20,7 @@ top of that:
     - php5-cli: command-line interpreter
 
 - `XCache`_ - PHP opcode caching acceleration.
-- `PHPMyAdmin`_ administration frontend for MySQL (listening on port
+- `Adminer`_ administration frontend for MySQL (listening on port
   12322 - uses SSL).
 - `Postfix`_ MTA (bound to localhost) to allow sending of email from web
   applications (e.g., password recovery).
@@ -38,6 +38,6 @@ Credentials *(passwords set at first boot)*
 .. _php5-xdebug: http://xdebug.org/
 .. _php-pear: http://pear.php.net/
 .. _XCache: http://xcache.lighttpd.net/
-.. _PHPMyAdmin: http://www.phpmyadmin.net/
+.. _Adminer: http://www.adminer.org/
 .. _Postfix: http://www.postfix.org/
 .. _LAPP stack: http://www.turnkeylinux.org/lapp
