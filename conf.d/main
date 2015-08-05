@@ -3,3 +3,7 @@
 #ensure datafiles (eg. innodb) are created
 /etc/init.d/mysql start
 /etc/init.d/mysql stop
+
+# remove unrequired webcp icons (all except those named)
+cd /var/www/images
+find . -type f ! -name "adminer.png" ! -name "shell.png" ! -name "tab.png" ! -name "webmin.png" -delete
