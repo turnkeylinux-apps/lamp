@@ -31,7 +31,7 @@ A separate `LAPP stack`_ appliance features PostgreSQL instead of MySQL.
 Credentials *(passwords set at first boot)*
 -------------------------------------------
 
--  Webmin, SSH, MySQL, phpMyAdmin: username **root**
+-  Webmin, SSH, MySQL, Adminer: username **root**
 
 .. _TurnKey Core: http://www.turnkeylinux.org/core
 .. _phpsh: http://www.phpsh.org/
