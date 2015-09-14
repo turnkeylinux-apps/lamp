@@ -33,11 +33,11 @@ Credentials *(passwords set at first boot)*
 
 -  Webmin, SSH, MySQL, Adminer: username **root**
 
-.. _TurnKey Core: http://www.turnkeylinux.org/core
+.. _TurnKey Core: https://www.turnkeylinux.org/core
 .. _phpsh: http://www.phpsh.org/
 .. _php5-xdebug: http://xdebug.org/
 .. _php-pear: http://pear.php.net/
 .. _XCache: http://xcache.lighttpd.net/
 .. _Adminer: http://www.adminer.org/
 .. _Postfix: http://www.postfix.org/
-.. _LAPP stack: http://www.turnkeylinux.org/lapp
+.. _LAPP stack: https://www.turnkeylinux.org/lapp
