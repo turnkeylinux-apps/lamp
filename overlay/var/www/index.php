@@ -61,7 +61,7 @@
                           (to disable: a2dismod status)
                         </li>
                         <li><a
-                        href="http://www.turnkeylinux.org/lamp">
+                        href="https://www.turnkeylinux.org/lamp">
                         TurnKey LAMP release notes</a></li>
                     </ul>
 
