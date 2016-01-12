@@ -28,57 +28,11 @@ top of that:
 
 A separate `LAPP stack`_ appliance features PostgreSQL instead of MySQL.
 
-Logging in for Administration
------------------------------
+Credentials *(passwords set at first boot)*
+-------------------------------------------
 
-**No default passwords**: For security reasons there are no default
-passwords. All passwords are set at system initialization, which happens
-either at:
+-  Webmin, SSH, MySQL, Adminer: username **root**
 
-1) First login for `headless build types`_ (e.g., EC2, OpenStack, Xen)
-2) First boot for non-headless build types (ISO, VM, VMDK)
-
-**Ignore SSL browser warning**: browsers don't like self signed SSL
-certificates, but this is the only kind that can be generated
-automatically without paying a commercial Certificate Authority. 
-  
-**Username for database administration**
-
-  Login as MySQL username **root** to:
-  
-  1) https://12.34.56.789:12322/ - Adminer database management web app
-
-  2) MySQL command line tool::
-  
-        $ mysql --user root --password
-        Enter password: 
-        Welcome to the MySQL monitor.  Commands end with ; or \g.
-        Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-        mysql>
-
-**Username for OS system administration**:
-
-  Login as **root** except on `AWS marketplace`_ which uses username
-  **admin**.
-
-  1) Point your browser to:
-
-     - https://12.34.56.789:12321/ - Web management interface 
-     - https://12.34.56.789:12320/ - AJAX web terminal
-       
-  2) Login with SSH client::
-  
-      ssh root@12.34.56.789
-
-     Special case for AWS marketplace::
-
-      ssh admin@12.34.56.789 
-      
-  \* Replace 12.34.56.789 with a valid IP or hostname.
-
-.. _headless build types: https://www.turnkeylinux.org/docs/builds#builds-table
-.. _AWS marketplace: https://aws.amazon.com/marketplace
 .. _TurnKey Core: https://www.turnkeylinux.org/core
 .. _phpsh: http://www.phpsh.org/
 .. _php5-xdebug: http://xdebug.org/
