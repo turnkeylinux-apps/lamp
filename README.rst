@@ -19,7 +19,6 @@ top of that:
     - `php-pear`_: php extension and application repository
     - php5-cli: command-line interpreter
 
-- `XCache`_ - PHP opcode caching acceleration.
 - `Adminer`_ administration frontend for MySQL (listening on port
   12322 - uses SSL).
 - `Postfix`_ MTA (bound to localhost) to allow sending of email from web
@@ -37,7 +36,6 @@ Credentials *(passwords set at first boot)*
 .. _phpsh: http://www.phpsh.org/
 .. _php5-xdebug: http://xdebug.org/
 .. _php-pear: http://pear.php.net/
-.. _XCache: http://xcache.lighttpd.net/
 .. _Adminer: http://www.adminer.org/
 .. _Postfix: http://www.postfix.org/
 .. _LAPP stack: https://www.turnkeylinux.org/lapp
