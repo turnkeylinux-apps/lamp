@@ -7,5 +7,5 @@ python-mysqldb           # A Python interface to MySQL
 libapache2-mod-perl2     # Integration of perl with the Apache2 web server
 libdbd-mysql-perl        # A Perl5 database interface to the MySQL database
 
-php5-xdebug
+php-xdebug
 php-pear

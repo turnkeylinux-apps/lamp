@@ -1,3 +1,14 @@
+turnkey-lamp-15.0 (1) turnkey; urgency=low
+
+  * Install Adminer directly from stretch/main repo
+
+  * Replaces MySQL with MariaDB
+
+  * Note: Please refer to turnkey-core's changelog for changes common to all
+    appliances. Here we only describe changes specific to this appliance.
+
+ -- Stefan Davis <stefan@turnkeylinux.org>  Thu, 09 Nov 2017 22:18:50 +1100
+
 turnkey-lamp-14.2 (1) turnkey; urgency=low
 
   * Updated Adminer to 4.2.5
