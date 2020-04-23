@@ -14,8 +14,6 @@ turnkey-lamp-16.0 (1) turnkey; urgency=low
   * Updated version of mysqltuner script - now installed as per upstream
     recommendation.
 
-  * Includes PHP7.3 (installed from Debian repos).
-
   * Note: Please refer to turnkey-core's changelog for changes common to all
     appliances. Here we only describe changes specific to this appliance.
 
