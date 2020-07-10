@@ -16,10 +16,13 @@ top of that:
 
     - `php-xdebug`_: debugging and profiling
     - `php-pear`_: php extension and application repository
-    - php5-cli: command-line interpreter
+    - php-cli: command-line interpreter
 
 - `Adminer`_ administration frontend for MySQL (MariaDB) (listening on port
   12322 - uses SSL).
+- MariaDB_ - MySQL drop-in replacement.
+- MySQLTuner_ - Perl script to review and tweak a MySQL/MariaDB
+  installation.
 - `Postfix`_ MTA (bound to localhost) to allow sending of email from web
   applications (e.g., password recovery).
 - Webmin modules for configuring Apache2, PHP, MySQL and Postfix.
@@ -34,9 +37,10 @@ Credentials *(passwords set at first boot)*
 -  Adminer: username **adminer**
 
 .. _TurnKey Core: https://www.turnkeylinux.org/core
-.. _phpsh: http://www.phpsh.org/
-.. _php-xdebug: http://xdebug.org/
-.. _php-pear: http://pear.php.net/
-.. _Adminer: http://www.adminer.org/
-.. _Postfix: http://www.postfix.org/
+.. _php-xdebug: https://xdebug.org/
+.. _php-pear: https://pear.php.net/
+.. _Adminer: https://www.adminer.org/
+.. _MariaDB: https://mariadb.com/
+.. _MySQLTuner: https://github.com/major/MySQLTuner-perl/blob/master/README.md
+.. _Postfix: https://www.postfix.org/
 .. _LAPP stack: https://www.turnkeylinux.org/lapp
