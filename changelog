@@ -1,5 +1,11 @@
 turnkey-lamp-16.1 (1) turnkey; urgency=low
 
+  * Include 'turnkey-composer' wrapper script - runs composer as www-data
+    user. Makes it easy to not run composer as root - part of #1539.
+
+  * Explictly install composer (rather than automatically include in all LAMP
+    based appliances) - part of #1563.
+
   * Note: Please refer to turnkey-core's 16.1 changelog for changes common to
     all appliances. Here we only describe changes specific to this appliance.
 
