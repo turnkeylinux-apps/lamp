@@ -12,11 +12,14 @@ top of that:
 
 - SSL support out of the box.
 - PHP, Python and Perl support for Apache2 and MySQL (MariaDB).
-- PHP development helpers
+- PHP development helpers:
 
-    - `php-xdebug`_: debugging and profiling
-    - `php-pear`_: php extension and application repository
-    - php-cli: command-line interpreter
+    - composer_ installed globally (/usr/local/bin/composer) from upstream.
+    - turnkey-composer_ convienience wrapper script - runs composer as the
+      'www-data' (webserver) user account.
+    - `php-xdebug`_: debugging and profiling.
+    - `php-pear`_: php extension and application repository.
+    - php-cli: command-line interpreter.
 
 - `Adminer`_ administration frontend for MySQL (MariaDB) (listening on port
   12322 - uses SSL).
@@ -37,6 +40,8 @@ Credentials *(passwords set at first boot)*
 -  Adminer: username **adminer**
 
 .. _TurnKey Core: https://www.turnkeylinux.org/core
+.. _composer: https://getcomposer.org/
+.. _turnkey-composer: https://github.com/turnkeylinux/common/blob/master/overlays/composer/usr/local/bin/turnkey-composer
 .. _php-xdebug: https://xdebug.org/
 .. _php-pear: https://pear.php.net/
 .. _Adminer: https://www.adminer.org/
