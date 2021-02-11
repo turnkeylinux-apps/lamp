@@ -1,9 +1,22 @@
+turnkey-lamp-16.1 (1) turnkey; urgency=low
+
+  * Include 'turnkey-composer' wrapper script - runs composer as www-data
+    user. Makes it easy to not run composer as root - part of #1539.
+
+  * Explicitly install composer (rather than automatically include in all LAMP
+    based appliances) - part of #1563.
+
+  * Note: Please refer to turnkey-core's 16.1 changelog for changes common to
+    all appliances. Here we only describe changes specific to this appliance.
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Wed, 10 Feb 2021 14:56:17 +1100
+
 turnkey-lamp-16.0 (1) turnkey; urgency=low
 
-  * Explcitly disable TLS<1.2 (i.e. SSLv3, TLSv1, TLSv1.1). (v15.x
+  * Explicitly disable TLS<1.2 (i.e. SSLv3, TLSv1, TLSv1.1). (v15.x
     TurnKey releases supported TLS 1.2, but could fallback as low as TLSv1).
 
-  * Update SSL/TLS cyphers to provide "Intermediate" browser/client support
+  * Update SSL/TLS ciphers to provide "Intermediate" browser/client support
     (suitable for "General-purpose servers with a variety of clients,
     recommended for almost all systems"). As provided by Mozilla via
     https://ssl-config.mozilla.org/.
@@ -21,7 +34,7 @@ turnkey-lamp-16.0 (1) turnkey; urgency=low
 
 turnkey-lamp-15.1 (1) turnkey; urgency=low
 
-  * Rebuild to resolve inadvertant removal of mariadb during sec-updates
+  * Rebuild to resolve inadvertent removal of mariadb during sec-updates
     - part of #1246.
 
  -- Jeremy Davis <jeremy@turnkeylinux.org>  Wed, 21 Nov 2018 18:29:42 +1100
@@ -74,7 +87,7 @@ turnkey-lamp-14.0 (1) turnkey; urgency=low
 
   * Latest Debian Jessie package versions of all components.
 
-  * Replaced PHPMyAdmin with Adminer
+  * Replaced phpMyAdmin with Adminer
 
   * Hardened default SSL settings
 
@@ -87,7 +100,7 @@ turnkey-lamp-13.0 (1) turnkey; urgency=low
 
   * Latest Debian Wheezy package versions of all components.
 
-  * PHPMyAdmin:
+  * phpMyAdmin:
 
     - Configured to allow users preferences stored in database.
     - Specified blowfish_secret and regeneration on firstboot (security).
@@ -160,7 +173,7 @@ turnkey-lamp-11.1 (1) turnkey; urgency=low
 
   * Set postfix MTA myhostname to localhost (bugfix).
 
-  * Enabled tracking in PHPMyAdmin.
+  * Enabled tracking in phpMyAdmin.
 
   * Minor tweaks to TKL web control panel.
 
@@ -203,11 +216,11 @@ turnkey-lamp-2009.10 (1) hardy; urgency=low
     web applications (e.g., password recovery). Also added webmin-postfix
     module for convenience.
 
-  * PHPMyAdmin improvements:
+  * phpMyAdmin improvements:
 
-    - Added pmadb (linked tables) advanced features to PHPMyAdmin (LP#426303)
-    - Added mcrypt extension to Apache2 required by PHPMyAdmin (LP#345275)
-    - Pinned PHPMyAdmin to update directly from Debian (security).
+    - Added pmadb (linked tables) advanced features to phpMyAdmin (LP#426303)
+    - Added mcrypt extension to Apache2 required by phpMyAdmin (LP#345275)
+    - Pinned phpMyAdmin to update directly from Debian (security).
 
   * di-live (installer) MySQL component:
 
