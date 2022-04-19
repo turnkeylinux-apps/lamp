@@ -1,3 +1,40 @@
+turnkey-lamp-17.0 (1) turnkey; urgency=low
+
+  * Updated all relevant Debian packages to Bullseye/11 versions; including
+    PHP 7.4.
+
+  * Provide predefined dh_params (via 'turnkey-make-ssl-cert' where relevant)
+    as per RFC7919 - part of #1653.
+
+  * Updated version of mysqltuner script.
+
+  * Enable HTTP/2 by default (where possible). Note: will not actually work
+    until a CA signed cert is generated or installed.
+
+  * Configure OCSP stapling (will only work once a valid cert is configured).
+
+  * Enable HSTS by default (only effects HTTPS traffic - full implementation
+    also requires HTTP redirect to HTTPS and valid cert).
+
+  * Enable Apache mod-headers by default (required for HSTS).
+
+  * Disable cipher order in default ssl.conf (no longer required with the
+    secure cipher suites we use; mild improvement in cpu resources).
+
+  * Update Apache's mod-python to use python3. Also update included python
+    mysql module to use python3 variant (python3-mysqldb).
+
+  * Retab default site file (000-default.conf) to make the indentation
+    consistent (cosmetic change only).
+
+  * Reorgnaise/refactor build code so there is now a dedicated apache.mk
+    file. (Development - should have no end user impact).
+
+  * Note: Please refer to turnkey-core's 17.0 changelog for changes common to
+    all appliances. Here we only describe changes specific to this appliance.
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Thu, 14 Apr 2022 09:28:23 +1000
+
 turnkey-lamp-16.1 (1) turnkey; urgency=low
 
   * Include 'turnkey-composer' wrapper script - runs composer as www-data
