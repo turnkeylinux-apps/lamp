@@ -1,3 +1,33 @@
+turnkey-lamp-18.1 (1) turnkey; urgency=low
+
+  * Rebuild for v18.1 - including more recent v18.0 common bugfixes & latest
+    Debian packages.
+
+  * Confconsole: bugfix broken DNS-01 Let's Encrypt challenge- closes #1876 &
+    #1895.
+    [Jeremy Davis <jeremy@turnkeylinux.org>]
+
+  * Ensure hashfile includes URL to public key - closes #1864.
+
+  * Include webmin-logviewer module by default - closes #1866.
+
+  * Web management console (webmin):
+    - Upgraded webmin to v2.105.
+    - Replace webmin-shell with webmin-xterm module by default - closes #1904.
+
+  * Set mod_evasive log location - makes debugging easier.
+    [ Jeremy Davis <jeremy@turnkeylinux.org> ]
+
+  * Includes new 'tkl-upgrade-php' helper script - to allow easy update/change
+    of PHP version - closes #1892.
+    [Marcos Méndez @ POPSOLUTIONS <https://github.com/marcos-mendez>]
+
+  * DEV: Add support for setting max_execution_time & max_input_vars in
+    php.ini via appliance Makefile (PHP_MAX_EXECUTION_TIME &
+    PHP_MAX_INPUT_VARS).
+
+ -- Jeremy Davis <jeremy@turnkeylinux.org>  Fri, 21 Jun 2024 05:03:22 +0000
+
 turnkey-lamp-18.0 (1) turnkey; urgency=low
 
   * Upgraded base distribution to Debian 12.x/Bookworm.
