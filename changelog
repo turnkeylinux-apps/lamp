@@ -17,14 +17,6 @@ turnkey-lamp-18.1 (1) turnkey; urgency=low
 
   * Reduce log noise by creating ntpsec log dir - closes #1952.
 
-  * Web management console (webmin):
-    - Upgraded webmin to v2.105.
-    - Replace webmin-shell with webmin-xterm module by default - closes #1904.
-    - Removed stunnel reverse proxy (Webmin hosted directly now).
-    - Ensure that Webmin uses HTTPS with default cert
-      (/etc/ssl/private/cert.pem).
-    - Disabled Webmin Let's Encrypt (for now).
-
   * Apache mod_evasive config improvements:
     - Bump DOSPageCount from (default) 2 -> 5 - closes #1951.
     - DOSLogDir - use default log dir & fix permissions - closes #1950.
