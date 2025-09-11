@@ -7,6 +7,10 @@ service mysql stop
 # enable cgi
 a2enmod cgi
 
+# enable header
+a2enmod headers
+a2enconf remove-upgrade-header
+
 # remove unrequired webcp icons (all except those named) 
 cd /var/www/images
 find . -type f ! -name "adminer.png" ! -name "shell.png" ! -name "tab.png" ! -name "webmin.png" -delete
