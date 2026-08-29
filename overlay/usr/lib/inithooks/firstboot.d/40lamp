@@ -1,0 +1,5 @@
+#!/bin/bash -e
+# Ensure Apache is running after the shared firstboot TLS certificate rotation.
+
+systemctl restart apache2.service
+systemctl --quiet is-active apache2.service

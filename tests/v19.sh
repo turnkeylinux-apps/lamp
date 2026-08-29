@@ -37,6 +37,7 @@ chmod 0600 "$client_conf"
 systemctl --quiet is-active \
     apache2.service mariadb.service multi-user.target
 grep -Fq 'Inithooks run completed' /var/log/inithooks.log
+grep -Fq '[40lamp] successfully completed' /var/log/inithooks.log
 apache2ctl configtest 2>&1 | grep -Fq 'Syntax OK'
 php -m | grep -Fxq mysqli
 
