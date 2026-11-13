@@ -1,3 +1,12 @@
+turnkey-lamp-19.0.3 (1) turnkey; urgency=medium
+
+  * Include the updated Webmin backup setup and Hub approval flow.
+  * Update TKLBAM, Hub helper and console setup/status guidance.
+  * Include the current HubDNS and certificate setup/renewal fixes.
+  * Retain forwarded-port management links and Debian security maintenance.
+
+ -- Liraz Siri <liraz@liraz.org>  Fri, 13 Nov 2026 11:35:00 +0000
+
 turnkey-lamp-19.0.2 (1) turnkey; urgency=low
 
   * Connect app email, dynamic DNS and backup setup through the Hub helper.
