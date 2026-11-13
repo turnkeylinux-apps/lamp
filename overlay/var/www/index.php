@@ -1,3 +1,7 @@
+<?php
+$host = parse_url('https://' . ($_SERVER['HTTP_HOST'] ?? ''), PHP_URL_HOST) ?: '';
+$host = htmlspecialchars($host, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
 <html lang="en">
@@ -33,12 +37,12 @@
                 <div class="fragment-content">
                     <div>
                         <a href="https://<?php print
-                        $_SERVER['HTTP_HOST']; ?>:12321"><img
+                        $host; ?>:12321"><img
                         src="images/webmin.png"/>Webmin</a>
                     </div>
                     <div>
                         <a href="https://<?php print
-                        $_SERVER['HTTP_HOST']; ?>:12322"><img
+                        $host; ?>:12322"><img
                         src="images/adminer.png"/>Adminer</a>
                     </div>
                     <div></div>
